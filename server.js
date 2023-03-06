@@ -8,7 +8,7 @@ const sequelize = require('./config');
 const routes = require('./controllers');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 //connect-session-sequelize sets up a session store table in the database, to replace in-memory storage
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
