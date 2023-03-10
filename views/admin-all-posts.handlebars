@@ -1,3 +1,14 @@
-
-{{!-- TODO - write the template to show all the user's posts on the /dashboard route --}}
-<h1>This is the dashboard main page that should display all of a users posts</h1>
+{{!-- where all users post are shown  --}}
+<div class="jumbotron">
+  <h1><i class="fa" aria-hidden="true"></i> Welcome to TuneIN </h1>
+  <p>Connect and create with artist from all over the world!</p>
+  <p><a class="btn btn-primary btn-lg" href ="/dashboard/create" role="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Create post</a></p>
+</div>
+<div class="all-posts">
+{{#each posts }}
+{{>post this }}
+{{/each}}
+</div>
+<script src="js/comment.js">
+  
+</script>

@@ -1,0 +1,22 @@
+{{!-- where users can create posts --}}
+<link rel="stylesheet" type="text/css" href="/css/create.css">
+<div class="d-flex justify-content-center pt-5">
+    <!-- not sure if we need to add form as a class -->
+    <form method="post" class="form" id="newPost">
+        <h2>Create a new post</h2>
+        <div class="post">
+          <form action="/action_page.php">
+            <label for="lname">Title</label>
+            <input type="text" id="title" name="title" placeholder="What are you looking for?">
+
+
+
+            <label for="subject">Content</label>
+                <textarea id="body" name="body" placeholder="Give us more details" style="height:200px"></textarea>
+
+                <button form="newPost" class="input--submit" type="submit" id="submit">Post!</button>
+          </form>
+        </div>
+
+    </form>
+</div>
