@@ -9,7 +9,7 @@ router.post('/', async (req, res) => {
   try {
     const newUser = await User.create({
       username: req.body.username,
-        email: req.body.email,
+         email: req.body.email,
       password: req.body.password,
     });
 
@@ -43,6 +43,7 @@ router.post('/login', async (req, res) => {
     const validPassword = user.checkPassword(req.body.password);
     console.log(validPassword);
 
+  
     if (!validPassword) {
       res.status(400).json({ message: 'No user account found!' });
       return;
