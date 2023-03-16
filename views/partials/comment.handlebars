@@ -1,0 +1,19 @@
+<div class="comments">
+    <ul class="comment_list">
+        <li>
+            <div class="comment_card" data-depth="0">
+                <figure class="commentfigure">
+                     <img class="commentimage" src="../images/userpro.jpg" alt="User profile"/>
+                        <figcaption class="commentfig_caption">
+                            <h6 class="commentuser">{{user.username}}</h6>
+                            <h3 class="commentemail">{{user.email}}</h3>
+                            <p class="date">{{ format_date createdAt }}</p>
+                            </figcaption>
+                            </figure>
+                            <article class="comment_text">
+                                 {{body}}
+                            </article>  
+            </div>
+         </li>
+    </ul> 
+</div>

@@ -1,0 +1,36 @@
+<div class="posts">
+    <ul class="comment_list">
+            <li>
+                <div class="post_card" data-depth="0">
+                    <figure class="figure">
+                        <img class="image" src="../images/userpro.jpg" alt="User pro"/>
+                        <figcaption class="fig_caption">
+                            <h5 class="name title-{{id}}">{{title}}</h5>
+                            <h5 class="occupation">{{user.username}}</h5>
+                            <p class="date">{{ format_date createdAt }}</p>
+                        </figcaption>
+                        </figure>
+                        <article class="post_text">
+                        {{body}}
+                        </article>
+                    <div class="comment_options">
+                        <button id="hideButton" data-id="{{id}}" class="edit">Edit</button>
+                        <button data-id="{{id}}" class="delete">Delete</button>
+                        <input type="hidden" id="postId" value="{{id}}" />
+                    </div>
+                    <div id="hideSection" style="display: none" class="comment_edit">
+                        <h5>Make your edit here!</h5>
+                        <textarea name="comment_edit" id="post-{{id}} comment_edit" class="comment_edit_textarea body-{{id}}" cols="0" rows="0">
+                        {{body}}
+                       </textarea>
+                        <div class="comment_edit_options">
+                            <button id="makeComment" data-id="{{id}}" class="saveEdit" type="submit" data-action="submit">Save</button>
+                            <input type="hidden" id="postId" value="{{id}}" />
+                            <button data-action="cancel">Cancel</button>
+                        </div> 
+                    </div>
+                    </div>
+                </div>
+            </li>
+        </ul> 
+</div>

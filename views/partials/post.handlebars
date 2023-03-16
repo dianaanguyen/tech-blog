@@ -1,0 +1,43 @@
+<div class="posts">
+    <ul class="comment_list">
+            <li>
+                <div class="post_card" data-depth="0">
+                    <div class="post-info">
+                        <figure class="figure">
+                            <img class="image" src="../images/userpro.jpg" alt="User profile"/>
+                            <figcaption class="fig_caption">
+                                <h5 class="name">{{title}}</h5> </br>
+                                <h6 class="user">{{user.username}} </br> {{user.email}}</h6> 
+                            </figcaption>
+                        </figure>
+                        <p class="date">{{ format_date createdAt }}</p>
+                    </div>
+                    <article class="post_text">
+                        {{body}}
+                    </article>
+                    <div class="comment_options">
+                        <button id="hideButton"> Show Comments</button>  
+                    </div>
+                    <div id="hideSection" style="display: none">
+                        <h4>Comments</h4>
+                    <div id="comments"class="postscomments">
+                        {{#each comments }} 
+                        {{>comment this }}
+                        {{/each}}   
+                    </div>
+                    </div>
+                    <div class="comment_edit">
+                        <h5>Write a comment</h5>
+                       <textarea name="comment_edit" id="comment_edit_{{id}}" class="comment_edit_textarea" cols="0" rows="0"></textarea>
+                       <p class="comment_message">Please enter more than one character to accept comment.</p>
+                        <div class="comment_edit_options">
+                            <button id="makeComment" type="submit" data-id="{{id}}" data-action="submit">Submit</button>
+                            <input type="hidden" id="postId" value="{{id}}" />
+                            <button data-action="cancel">Cancel</button>
+                        </div> 
+                    </div>
+                </div>
+            </li>
+        </ul>      
+</div>
+
