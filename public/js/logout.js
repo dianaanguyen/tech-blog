@@ -1,3 +1,5 @@
+
+// Frontend JS for login page, this is loaded via the script tag in the login.handlebars file
 const logout = async function() {
   event.preventDefault();
 
