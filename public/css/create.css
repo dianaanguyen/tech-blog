@@ -6,7 +6,7 @@ body {
 }
 
 h2 {
-  color: #3A1013ff;
+  color: rgb(22, 43, 107);
   font-size: 40px;
   text-shadow: 0px 2px 2px whitesmoke;
   font-weight: 400;
@@ -18,11 +18,11 @@ h2 {
 .post {
   margin: auto;
   width:600px;
-  border: 1px solid #8F3F3Bff;;
+  border: 1px solid rgb(42, 35, 133);;
   border-radius: 5px;
   background-color: #E8E8E6ff;
   padding: 20px;
-  color:#8F3F3Bff;;
+  color:rgb(41, 50, 148);;
   font-size:24px;
   animation: myAnim 2s ease 0s 1 normal forwards;
     }
@@ -42,7 +42,7 @@ h2 {
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #8F3F3Bff;
+  border: 1px solid rgb(55, 72, 198);
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -55,17 +55,17 @@ input[type=text], select, textarea {
 
 button {
  width: 100%;
- background-color: #8F3F3Bff;
+ background-color: rgb(38, 59, 150);
   color: white;
   padding: 12px 20px;
-  border: 1px solid #8F3F3Bff;
+  border: 1px solid rgb(31, 31, 139);
   border-radius: 4px;
   cursor: pointer;
   font-size: 17px;
 }
 
 button:hover {
- background-color:#B9545Eff; 
+ background-color:rgb(130, 155, 228); 
  color: white;
 }
 

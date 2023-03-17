@@ -1,6 +1,6 @@
 body {
 	padding-top: 70px;
-	background-image: url('../images/coding-bg.jpeg');
+	background-image: url('../images/coding-bg-2.jpg');
 	background-size: cover;
 	background-position: center;
     background-attachment: fixed;
@@ -14,7 +14,7 @@ nav
    top: 0px;
 }
 .jumbotron{
-	color: #3A1013ff;
+	color: rgb(44, 58, 145);
 	background: transparent;
 	/*background-size: cover;
 	background-position: center;*/
@@ -25,7 +25,7 @@ nav
 
 }
 .navbar-inverse {
-	background: #3A1013ff;
+	background: rgb(44, 58, 145);
 }
 .navbar-inverse .navbar-nav>li>a {
     color: white;
@@ -52,6 +52,6 @@ hr {
 }
 
 .btn-primary {
-    background-color: #562E26ff;
+    background-color: rgb(31, 39, 111);
     border-color: #562E26ff;
 }
