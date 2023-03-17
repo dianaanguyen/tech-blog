@@ -27,7 +27,6 @@ router.get("/", withAuth, async (req, res) => {
   });
   const posts = postsData.map((post) => post.get ({ plain: true}));
   console.log(posts);
-  console.log(posts[0].comments)
   res.render("admin-all-posts", {layout: "dashboard", posts});
 });
 

@@ -10,17 +10,31 @@
   </head>
 
   <body>
-    
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="display:none" >
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    {{!-- discuss simplifying nav bar --}}
+    <div class="navbar-header">
+      <a class="navbar-brand"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> TuneIN</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div>
+      <ul class="nav navbar-nav">
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/dashboard/profile">Profile</a></li>
+         <li><a href="/dashboard/create">Create</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/" id="logout-link">Log out <i class="fa fa-user" aria-hidden="true"></i></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
     <main>
       {{{body}}}
     </main>
   </body>
 </html>
 {{! inline script to handle click of logout button }}
-<script>
-  const logout = async function() { const response = await
-  fetch('/api/user/logout', { method: 'POST', headers: { 'Content-Type':
-  'application/json' }, }); if (response.ok) { document.location.replace('/'); }
-  else { alert('Failed to log out'); } };
-  document.querySelector('#logout-link').addEventListener('click', logout);
-</script>
+<script src="/js/logout.js"></script>
