@@ -1,7 +1,7 @@
 
 // index.js establishes relationships between the models, 
 //and also creates the foreign key constraights without explicitly setting them in the Models
-const User = require('./user');
+const User = require('./User');
 const Post = require('./Post');
 const Comment = require('./Comment');
 
