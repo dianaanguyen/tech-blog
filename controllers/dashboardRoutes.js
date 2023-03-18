@@ -1,7 +1,7 @@
 // Dashboard Routes
 const router = require("express").Router();
 const { Post, User, Comment } = require("../models/");
-const { restore } = require("../models/user");
+const { restore } = require("../models/User");
 const withAuth = require("../utils/auth");
 
 // get all the posts made from all users 
